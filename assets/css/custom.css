@@ -30,7 +30,7 @@ body {
 /* === GLOBAL === */
 
 h1, h2, h3, h4, h4, h5, h6 {
-    -webkit-font-smoothing: antialised;
+    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-weight: bold;
 }
@@ -67,6 +67,28 @@ button, input, .btn, a.btn {
 
 img {
     max-width: 100%;
+}
+
+.modal-content {
+    background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+    background: #ccc;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 5px 20px 0;
+    padding: 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.badge.social:hover{
+    background: #d95638;
 }
 
 /* === HERO === */
@@ -154,13 +176,11 @@ section h3 {
 }
 
 
-
-
 #optin {
     background: #3e4249;
     padding: 20px 0;
     color: white;
-    -webfont-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-size: 1.2em;
 }
@@ -187,6 +207,42 @@ section h3 {
     background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
     background-size: cover;
     text-align: center;
+}
+
+#instructor {
+    background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+#instructor h2 {
+    margin: 0 0 20px;
+}
+
+#instructor .num {
+    display: table;
+    background: #d95638;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 24px;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+#instructor .num .num-content {
+    display: table-cell; /* because we set .num to act as table, this child will align easily */
+    vertical-align: middle;
+}
+
+#instructor .num span {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 /* === CUSTOM ICON SPRITES === */
