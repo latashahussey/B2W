@@ -24,7 +24,6 @@ body {
     font-family: 'liberation-sans', 'Raleway', Helvetica, sans-serif;
     font-size: 16px;
     background: url('../img/tile.jpg') top left repeat;
-    background-size: cover;
 }
 
 /* === GLOBAL === */
@@ -62,7 +61,7 @@ button, input, .btn, a.btn {
 
 .btn-danger {
     background-color: #dd5638;
-    border-collapse:  #d95131;
+    border-collapse: #d95131;
 }
 
 img {
@@ -87,11 +86,35 @@ img {
     border-radius: 50px;
 }
 
-.badge.social:hover{
-    background: #d95638;
+.badge.social.twitter:hover {
+    background: #55acee;
+}
+.badge.social.facebook:hover {
+    background: #3b5998;
+}
+.badge.social.glpus:hover {
+    background: #db4b39;
+}
+
+blockquote {
+    padding: 0;
+    border: none;
+    font-style: italic;
+    text-align: left;
+}
+
+blockquote cite {
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+}
+
+blockquote:before {
+    display: none;
 }
 
 /* === HERO === */
+
 #hero {
     background: url('../img/hero-bg.jpg') 50% 100% repeat fixed;
     background-size: cover;
@@ -136,7 +159,8 @@ img {
     height: 70px;
     width: 70px;
     text-align: center;
-    line-height: 70px; /* vertically align text */
+    line-height: 70px;
+    /* vertically align text */
     font-weight: bold;
     font-size: 24px;
     border-radius: 100%;
@@ -145,7 +169,8 @@ img {
     position: absolute;
     bottom: -35px;
     left: 50%;
-    margin-left: -35px; /* align circle to box */
+    margin-left: -35px;
+    /* align circle to box */
 }
 
 #price-timeline h4 {
@@ -159,6 +184,7 @@ img {
 }
 
 /* === LAYOUT === */
+
 section {
     padding: 80px 0;
 }
@@ -172,9 +198,9 @@ section h2 {
 }
 
 section h3 {
-    margin: 30px 0 10px; /* top sides bottom */
+    margin: 30px 0 10px;
+    /* top sides bottom */
 }
-
 
 #optin {
     background: #3e4249;
@@ -235,7 +261,8 @@ section h3 {
 }
 
 #instructor .num .num-content {
-    display: table-cell; /* because we set .num to act as table, this child will align easily */
+    display: table-cell;
+    /* because we set .num to act as table, this child will align easily */
     vertical-align: middle;
 }
 
@@ -243,6 +270,20 @@ section h3 {
     display: block;
     font-size: 20px;
     font-weight: normal;
+}
+
+#kudos {
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 60px;
+}
+
+.testimonial img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 /* === CUSTOM ICON SPRITES === */
@@ -254,9 +295,26 @@ i.ci {
     background: url('../img/icon-sprite.png') no-repeat;
 }
 
-.ci.ci-computer          {background-position: 0 0;}
-.ci.ci-watch             {background-position: -40px 0;}
-.ci.ci-calendar          {background-position: -80px 0;}
-.ci.ci-community         {background-position: -120px 0;}
-.ci.ci-instructor        {background-position: -160px 0;}
-.ci.ci-device            {background-position: -200px 0;}
+.ci.ci-computer {
+    background-position: 0 0;
+}
+
+.ci.ci-watch {
+    background-position: -40px 0;
+}
+
+.ci.ci-calendar {
+    background-position: -80px 0;
+}
+
+.ci.ci-community {
+    background-position: -120px 0;
+}
+
+.ci.ci-instructor {
+    background-position: -160px 0;
+}
+
+.ci.ci-device {
+    background-position: -200px 0;
+}
