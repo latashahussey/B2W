@@ -50,12 +50,26 @@ h4 {
     font-size: 18px;
 }
 
+p {
+    margin-bottom: 15px;
+}
+
+p.lead {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/*
 a:link, a:visited {
     color: #dd5638;
 }
+
 a:hover {
+    text-decoration: none;
     color: #c9302c;
 }
+*/
+
 
 
 button, input, .btn, a.btn {
@@ -321,7 +335,7 @@ section h3 {
 }
 
 #signup h2 strong {
-    border-bottom: solid 2px #dd5638;
+    border-bottom: solid 2px #dd3838;
 }
 
 #signup .btn {
@@ -387,4 +401,23 @@ i.ci {
 
 .ci.ci-device {
     background-position: -200px 0;
+}
+
+/* === CUSTOM MEDIA QUERIES === */
+
+@media screen and (max-width: 991px) {
+    #instructor .container {
+        background: rgba(255, 255, 2555, 0.8);
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 50%;
+    }
+
+    #optin p {
+        margin: 0 0 10px;
+    }
 }
