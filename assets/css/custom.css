@@ -119,8 +119,6 @@ img {
     line-height: 42px;
     margin: 0 5px 20px 0;
     padding: 0;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
     border-radius: 50px;
 }
 
@@ -254,13 +252,11 @@ section h3 {
 
 .feature-image-default {
     background: url('../img/stuff-feature.jpg') no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
 }
 
 .feature-image-default-alt {
     background: url('../img/hipster-stuff.jpg') no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
 }
 
@@ -320,8 +316,6 @@ section h3 {
     height: 140px;
     width: 140px;
     text-align: center;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     border-radius: 100%;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -348,8 +342,6 @@ section h3 {
 }
 
 .testimonial img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
 }
 
@@ -402,7 +394,7 @@ footer li.signup-link a:hover {
 
 /* === BLOG === */
 
-.post {
+.post, .widget {
     position: relative;
     border: solid 1px #ddd;
     background: white;
@@ -443,6 +435,32 @@ footer li.signup-link a:hover {
 
 .post-details i.fa:first-child {
     padding: 0;
+}
+
+/* === WIDGETS ===*/
+.widget {
+  padding: 20px;
+}
+
+.widget h4 {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: solid 1px #ddd;
+}
+
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget ul li {
+  margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+  position: relative;
+  left: 1px;
 }
 
 /* === COMMENTS === */
@@ -514,6 +532,29 @@ i.ci {
 .ci.ci-device {
     background-position: -200px 0;
 }
+
+/* === FORMS === */
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+
 
 /* === CUSTOM MEDIA QUERIES === */
 
